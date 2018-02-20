@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,800&subset=cyrillic");
+@font-face {
+  font-family: "HaginCapsMedium";
+  src: url("../fonts/HaginCapsMedium/HaginCapsMedium.eot");
+  src: url("../fonts/HaginCapsMedium/HaginCapsMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/HaginCapsMedium/HaginCapsMedium.woff") format("woff"), url("../fonts/HaginCapsMedium/HaginCapsMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.yellow {
+  color: #f7d708; }
+
+* {
+  color: white; }
+
+h1, h2, p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300; }
+
+b {
+  font-weight: 800; }
+
+input {
+  color: #a7a9ac; }
+
+.text-center {
+  text-align: center; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.number-wrapper {
+  display: inline-block; }
+  .number-wrapper .number {
+    font-family: "HaginCapsMedium"; }
+  .number-wrapper .caption {
+    font-family: "HaginCapsMedium"; }
+
+body {
+  background: url("background.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+  body p.header {
+    color: white; }
+  body h1 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+
+#CDT {
+  text-align: center;
+  color: white; }
+
+.first-form {
+  text-align: center; }
+  .first-form input {
+    display: inline-block; }
+  .first-form a {
+    display: inline-block; }
+
+#InputEmail1 {
+  width: 300px;
+  height: 56px;
+  margin-left: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.open-lightbox {
+  background: #f7d708;
+  color: black;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 0;
+  padding: 15px 35px 14px 37px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px; }
+  .open-lightbox:hover {
+    text-decoration: none;
+    color: black;
+    background: #e8ca08; }
+  .open-lightbox * {
+    color: inherit; }
+
+@media (max-width: 370px) {
+  body {
+    padding-top: 30px; }
+    body p.header {
+      font-size: 18px;
+      margin-bottom: 50px; }
+      body p.header br {
+        display: none; } }
+
+@media (min-width: 371px) and (max-width: 991px) {
+  body {
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 80px 0; }
+    body p.header {
+      font-size: 24px;
+      margin-bottom: 190px; }
+      body p.header b {
+        display: block; }
+    body #CDT {
+      margin-bottom: 100px; }
+    body .number-wrapper {
+      margin: 0 20px;
+      width: 100px; }
+      body .number-wrapper:first-child {
+        margin-left: 0; }
+      body .number-wrapper:last-child {
+        margin-right: 0; }
+      body .number-wrapper .number {
+        font-size: 100px;
+        line-height: 1; }
+      body .number-wrapper .caption {
+        font-size: 24px;
+        text-align: center; }
+    body .desc {
+      font-size: 24px;
+      margin-bottom: 30px; } }
+
+@media (min-width: 992px) {
+  body {
+    padding: 50px 0; }
+    body p.header {
+      font-size: 24px;
+      margin-bottom: 110px; }
+    body #CDT {
+      margin-bottom: 100px; }
+    body .number-wrapper {
+      margin: 0 20px;
+      width: 200px; }
+      body .number-wrapper:first-child {
+        margin-left: 0; }
+      body .number-wrapper:last-child {
+        margin-right: 0; }
+      body .number-wrapper .number {
+        font-size: 200px;
+        line-height: 1; }
+      body .number-wrapper .caption {
+        font-size: 24px;
+        text-align: center; }
+    body .desc {
+      font-size: 24px;
+      margin-bottom: 30px; } }
