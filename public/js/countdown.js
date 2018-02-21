@@ -18,7 +18,7 @@ CountdownTimer.prototype={
   if(hour < 10) {hour = "0" + hour}
 
   if( ( this.tl - today ) > 0 ){
-   timer += '<div class="number-wrapper"><div class="number day">'+day+'</div><div class="caption">Дней</div></div>';
+   //timer += '<div class="number-wrapper"><div class="number day">'+day+'</div><div class="caption">Дней</div></div>';
    timer += '<div class="number-wrapper"><div class="number hour">'+hour+'</div><div class="caption">Часов</div></div>';
    timer += '<div class="number-wrapper"><div class="number min">'+this.addZero(min)+'</div><div class="caption">Минут</div></div>';
    timer += '<div class="number-wrapper"><div class="number sec">'+this.addZero(sec)+'</div><div class="caption">Секунд</div></div>';
