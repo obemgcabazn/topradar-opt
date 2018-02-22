@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>Топ радар ОПТ</title> 
   </head>
   <body> 
     <div class="container">
