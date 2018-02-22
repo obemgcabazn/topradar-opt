@@ -44,3 +44,41 @@ function CDT(){
 window.onload=function(){
  CDT();
 }
+
+
+//ДНИ
+function CountdownTimerDay(elm,tl,mes){
+ this.initialize.apply(this,arguments);
+}
+CountdownTimerDay.prototype={
+ initialize:function(elm,tl) {
+  this.elem = document.getElementById(elm);
+  this.tl = tl;
+ },countDownDay:function(){
+  var timerDay='';
+  var today=new Date();
+  var day=Math.floor((this.tl-today)/(24*60*60*1000));
+  var me=this;
+
+  if( ( this.tl - today ) > 0 ){
+   timerDay += '<div class="number-wrapper"><div class="number day">'+day+'</div><div class="caption">Дней</div></div>';
+   this.elem.innerHTML = timerDay;
+   tid = setTimeout( function(){me.countDownDay();},10 );
+  }else{
+   this.elem.innerHTML = this.mes;
+   return;
+  }
+ },addZero:function(num){ return ('0'+num).slice(-2); }
+}
+
+function CDTD(){
+ // Set countdown limit
+ var tl = new Date('2018/03/01 00:00:00');
+
+ // You can add time's up message here
+ var timerDay = new CountdownTimerDay('CDTD',tl);
+ timerDay.countDownDay();
+}
+window.onload=function(){
+ CDTD();
+}

@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col">
           <p class="header text-center text-uppercase"><b>Только <span class="yellow">10 партнеров</span > получат <br class="d-desktop"> уникальное преимущество</b> для своего бизнеса</p>
-          <h1 class="text-center text-uppercase">до старта проекта осталось <b>7 дней</b></h1>
+          <h1 class="text-center text-uppercase">до старта проекта осталось <div id="CDT"></div></h1>
           <div id="CDT"></div>
 
           <p class="text-center desc">Оставьте ваши контакты и узнайте о предложении первым!</p> 
