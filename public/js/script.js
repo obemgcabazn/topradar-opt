@@ -54,10 +54,7 @@
             });
 
             // Отправка корректной заявки в Handler
-            var xhr = new XMLHttpRequest();
-              xhr.open('POST', 'handler.php', true);
-              xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-              xhr.send( 'name=' + encodeURIComponent(data['name']) + '&email=' + encodeURIComponent(data['email']) + '&phone=' + encodeURIComponent(data['phone']) + '&pavilion=' + encodeURIComponent(data['pavilion']) + '&completed=true' );
+            $.post('/handler.php?complete=true', m_data, function(result){ console.log("отправлено в handler") });
         });
 
         window.addEventListener('beforeunload', function (e) {
