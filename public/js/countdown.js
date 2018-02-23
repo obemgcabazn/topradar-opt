@@ -41,44 +41,37 @@ function CDT(){
  timer.countDown();
 }
 
-window.onload=function(){
- CDT();
-}
 
-
-//ДНИ
-function CountdownTimerDay(elm,tl,mes){
+function returnDays(elm,tl){
  this.initialize.apply(this,arguments);
 }
-CountdownTimerDay.prototype={
+returnDays.prototype={
  initialize:function(elm,tl) {
-  this.elem = document.getElementById(elm);
-  this.tl = tl;
+  this.elem1 = document.getElementById(elm);
+  this.tl1 = tl;
  },countDownDay:function(){
-  var timerDay='';
-  var today=new Date();
-  var day=Math.floor((this.tl-today)/(24*60*60*1000));
-  var me=this;
+  var timer1 = '';
+  var today1 = new Date();
+  var day1=Math.floor((this.tl1-today1)/(24*60*60*1000));
+  var me1=this;
 
-  if( ( this.tl - today ) > 0 ){
-   timerDay += '<div class="number-wrapper"><div class="number day">'+day+'</div><div class="caption">Дней</div></div>';
-   this.elem.innerHTML = timerDay;
-   tid = setTimeout( function(){me.countDownDay();},10 );
-  }else{
-   this.elem.innerHTML = this.mes;
-   return;
+  if( ( this.tl1 - today1 ) > 0 ){
+   timer1 += '<span class="number day"><b>'+day1+' дней</b></span>';
+   this.elem1.innerHTML = timer1;
+   tid1 = setTimeout( function(){me1.countDownDay();},10 );
   }
- },addZero:function(num){ return ('0'+num).slice(-2); }
+ }
 }
 
 function CDTD(){
- // Set countdown limit
  var tl = new Date('2018/03/01 00:00:00');
 
  // You can add time's up message here
- var timerDay = new CountdownTimerDay('CDTD',tl);
+ var timerDay = new returnDays('CDTD',tl);
  timerDay.countDownDay();
 }
+
 window.onload=function(){
- CDTD();
+ CDTD(); 
+ CDT(); 
 }

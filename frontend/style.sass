@@ -40,6 +40,9 @@ input
   .caption
     font-family: "HaginCapsMedium"
 
+input.invalid
+  border-color: red
+
 body
   background: url('background.jpg') no-repeat
   background-size: cover
@@ -74,20 +77,65 @@ body
 
 .open-lightbox
   background: $yellow 
-  color: black
   font-size: 18px
+  cursor: pointer
+  b
+    color: black
   &:hover 
     text-decoration: none
     color: black
     background: darken($yellow, 3)
-  & *
-    color: inherit
+
+.modal 
+  &-header
+    border: none
+    .modal-title
+      width: 100%
+  &-content
+    border-radius: 0
+  &-footer
+    border: none
+    padding-bottom: 30px
+
+  h5, b
+    color: black
+
+  .form-group
+    &:last-child
+      margin-bottom: 0
+    input
+      font-size: 18px
+      padding: 15px 35px 14px 20px
+      border-radius: 10px
+      b
+  &-result
+    display: none
+    padding: 60px
+    font-size: 18px
+    h6
+      color: $yellow
+      font-weight: bold
+      font-size: 28px
+    p
+      color: black
+      margin-bottom: 0
+
+  button[type="submit"]
+    background: $yellow
+    border: none
+    color: black
+    font-weight: bold
+    width: 100%
+    padding: 14px 0
+    font-size: 18px
+    &:hover
+      background: darken($yellow, 6)
+
 
 // Mobile
-@media(max-width: 370px)
+@media(max-width: 414px)
   body
     padding-top: 30px
-
 
     p.header
       font-size: 18px
@@ -128,7 +176,7 @@ body
       border-radius: 5px
 
 // Tablet
-@media(min-width: 371px) and (max-width: 991px)
+@media(min-width: 415px) and (max-width: 991px)
   body
     background-size: cover
     background-position: 50% 50%
@@ -159,10 +207,12 @@ body
       margin-bottom: 30px
 
     #InputEmail1
-      width: 300px
+      width: 230px
       height: 56px
       margin-left: 10px
       padding-left: 20px
+      position: relative
+      top: 0px
       -webkit-border-top-right-radius: 0
       -webkit-border-bottom-right-radius: 0
       -moz-border-radius-topright: 0
@@ -179,7 +229,6 @@ body
 
     .open-lightbox
       background: $yellow 
-      color: black
       font-size: 18px
       display: inline-block
       margin-left: 0
@@ -191,6 +240,8 @@ body
       border-top-right-radius: 10px
       border-bottom-right-radius: 10px
       margin-right: 10px
+      b
+        color: black
       &:hover
         text-decoration: none
         color: black
@@ -201,21 +252,21 @@ body
 // Desctop
 @media(min-width: 992px)
   body
-    padding: 50px 0 
+    padding: 40px 0 
 
     p.header
       font-size: 24px
-      margin-bottom: 110px
+      margin-bottom: 90px
 
     #CDT
-      margin-bottom: 100px
+      margin-bottom: 50px
 
     .number-wrapper
       margin: 0 20px
       width: 200px
 
       .number
-        font-size: 200px
+        font-size: 180px
         line-height: 1
       .caption
         font-size: 24px

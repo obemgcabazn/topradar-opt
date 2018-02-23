@@ -7,6 +7,7 @@ gulp.task('watch', function(){
   // gulp.watch( 'frontend/*.pug', gulp.series( 'pug' ) );
   gulp.watch( 'frontend/*.sass', gulp.series( 'sass' ) );
   gulp.watch( 'public/*.php').on('change', livereload.changed);
+  gulp.watch( 'public/js/*.js').on('change', livereload.changed);
   gulp.watch( 'public/*.css').on('change', livereload.changed);
 });
 
